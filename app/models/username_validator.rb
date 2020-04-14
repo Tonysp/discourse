@@ -46,7 +46,7 @@ class UsernameValidator
   ASCII_INVALID_CHAR_PATTERN ||= /[^\w.-]/
   UNICODE_INVALID_CHAR_PATTERN ||= /[^\p{Alnum}\p{M}._-]/
   INVALID_LEADING_CHAR_PATTERN ||= /^[^\p{Alnum}\p{M}_]+/
-  INVALID_TRAILING_CHAR_PATTERN ||= /[^\p{Alnum}\p{M}]+$/
+  INVALID_TRAILING_CHAR_PATTERN ||= /[^\p{Alnum}\p{M}_]+$/
   REPEATED_SPECIAL_CHAR_PATTERN ||= /[-_.]{2,}/
 
   private
